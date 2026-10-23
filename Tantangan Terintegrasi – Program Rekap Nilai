@@ -1,0 +1,38 @@
+# Tantangan Terintegrasi - Program Rekap Nilai
+
+# Data mahasiswa
+nama = "Amjad"
+nilai_tugas = 80
+nilai_ujian = 90
+
+# Menghitung rata-rata
+rata_rata = (nilai_tugas + nilai_ujian) / 2
+
+# Menentukan status kelulusan
+lulus = rata_rata >= 75
+
+# Menampilkan hasil
+print("Nama Mahasiswa:", nama)
+print("Nilai Tugas:", nilai_tugas)
+print("Nilai Ujian:", nilai_ujian)
+print("Rata-rata:", rata_rata)
+print("Status Lulus:", lulus)
+
+print("\n--- Pengujian Kedua ---")
+
+# Kombinasi nilai kedua
+nilai_tugas = 60
+nilai_ujian = 70
+
+# Menghitung rata-rata
+rata_rata = (nilai_tugas + nilai_ujian) / 2
+
+# Menentukan status kelulusan
+lulus = rata_rata >= 75
+
+# Menampilkan hasil
+print("Nama Mahasiswa:", nama)
+print("Nilai Tugas:", nilai_tugas)
+print("Nilai Ujian:", nilai_ujian)
+print("Rata-rata:", rata_rata)
+print("Status Lulus:", lulus)
