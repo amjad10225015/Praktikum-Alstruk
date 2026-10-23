@@ -1,0 +1,15 @@
+terdaftar = True
+
+# 1. Menampilkan semua nilai variabel
+print("Nama:", nama)
+print("Umur:", umur)
+print("Berat:", berat)
+print("Terdaftar:", terdaftar)
+
+# 2. Mengubah umur menjadi 20
+umur = 20
+print("\nUmur setelah diubah:", umur)
+
+# 3. Perbedaan "19" dan 19
+print('"19" bertipe:', type("19"))
+print("19 bertipe:", type(19))
