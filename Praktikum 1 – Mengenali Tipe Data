@@ -1,3 +1,8 @@
+# Praktikum 1 - Mengenali Tipe Data
+
+nama = "Fajar"
+umur = 19
+berat = 54.5
 terdaftar = True
 
 # 1. Menampilkan semua nilai variabel
