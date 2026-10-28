@@ -1,0 +1,14 @@
+
+# Program Menentukan Kelulusan Mahasiswa
+
+nama = input("Masukkan nama mahasiswa: ")
+nilai = float(input("Masukkan nilai akhir: "))
+
+print("\n=== HASIL KELULUSAN ===")
+print("Nama:", nama)
+print("Nilai akhir:", nilai)
+
+if nilai >= 60:
+    print("Status: Lulus")
+else:
+    print("Status: Belum Lulus")
