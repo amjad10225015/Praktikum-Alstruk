@@ -1,0 +1,63 @@
+# Program Tuple Data Mahasiswa
+
+mahasiswa = ("10225015", "Amjad", "Informatika")
+
+print("DATA MAHASISWA")
+print("NIM           :", mahasiswa[0])
+print("Nama          :", mahasiswa[1])
+print("Program Studi :", mahasiswa[2])
+
+# Program Array Nilai Mahasiswa
+
+nilai = [80, 75, 90, 85, 70]
+
+print("DAFTAR NILAI MAHASISWA")
+
+for i in range(len(nilai)):
+    print("Mahasiswa", i + 1, ":", nilai[i])
+
+rata_rata = sum(nilai) / len(nilai)
+
+print("Nilai Rata-rata:", rata_rata)
+
+# Program Linked List Antrean Parkir
+
+class Node:
+    def __init__(self, kendaraan):
+        self.kendaraan = kendaraan
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def tambah(self, kendaraan):
+        node_baru = Node(kendaraan)
+
+        if self.head is None:
+            self.head = node_baru
+        else:
+            sekarang = self.head
+
+            while sekarang.next:
+                sekarang = sekarang.next
+
+            sekarang.next = node_baru
+
+    def tampilkan(self):
+        sekarang = self.head
+
+        print("DAFTAR KENDARAAN PARKIR")
+
+        while sekarang:
+            print(sekarang.kendaraan)
+            sekarang = sekarang.next
+
+# Membuat daftar parkir
+parkir = LinkedList()
+
+parkir.tambah("Motor - D 1234 AB")
+parkir.tambah("Mobil - D 5678 CD")
+parkir.tambah("Motor - Z 9876 EF")
+
+parkir.tampilkan()
